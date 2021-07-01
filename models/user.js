@@ -15,10 +15,10 @@ const userSchema = new Schema(
             match: [/.+@.+\..+/]
         },
         thoughts: [{
-            type: Schema.Types.ObjectId, ref: 'Thought' 
+            type: Schema.Types.ObjectId, ref: 'thought' 
         }],
         friends: [{
-            type: Schema.Types.ObjectId, ref: 'User' 
+            type: Schema.Types.ObjectId, ref: 'user' 
         }]
     },
     {
@@ -33,7 +33,7 @@ userSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 });
 
-const user = model('user', userSchema);
+const User = model('User', userSchema);
 
-module.exports = user;
+module.exports = User;
 
