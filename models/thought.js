@@ -8,7 +8,7 @@ const thoughtSchema = new Schema(
             type: String,
             required: true,
             minLength: 1,
-            macLength: 280
+            maxLength: 280
         },
         createdAt: {
             type: Date,
@@ -26,7 +26,6 @@ const thoughtSchema = new Schema(
             virtuals: true,
             getters: true
         },
-        id: false
     }
 );
 

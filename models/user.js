@@ -4,26 +4,28 @@ const userSchema = new Schema(
     {
         username: {
             type: String,
-            unique: true,
             required: true,
+            unique: true,
             trim: true
         },
         email: {
             type: String,
-            unique: true,
             required: true,
+            unique: true,
             match: [/.+@.+\..+/]
         },
         thoughts: [{
-            type: Schema.Types.ObjectId, ref: 'thought' 
+            type: Schema.Types.ObjectId,
+            ref: 'Thought' 
         }],
         friends: [{
-            type: Schema.Types.ObjectId, ref: 'user' 
+            type: Schema.Types.ObjectId, 
+            ref: 'User' 
         }]
     },
     {
         toJSON: {
-            virtuals: true
+            virtuals: true,
         },
         id: false
     }
