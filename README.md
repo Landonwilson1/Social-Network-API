@@ -1,7 +1,7 @@
 # NOSQL: Social Network API
 
   ## Desciption 
-  This application creates an API for a social network where users can share their thoughts, eact to friends' thoughts and create a friends list. The application is built with Express.js, MongoDB, and JavaScript. A walkthrough video demostrating the appilication is listed below.
+  This application creates an API for a social network where users can share their thoughts, react to friends' thoughts and create a friends list. The application is built with Express.js, MongoDB, and JavaScript. A walkthrough video demonstrating the appilication is linked below.
   
   [Walkthorugh](https://drive.google.com/file/d/1y3tnIQEIIAHeCj5tLCOfKzMRdDT25eUr/view?usp=sharing)
 
